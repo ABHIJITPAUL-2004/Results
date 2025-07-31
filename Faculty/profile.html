@@ -4,47 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty Profile details</title>
+    <link rel="stylesheet" href="Styles\faculty.css">
+
 </head>
 <body>
-    <center><h1 style="
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    background-color: #f0f8ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">Faculty Profile</h1></center>
-    <center>
-        <table boreder="1">
+    <h1 class="profile-heading">Faculty Profile</h1>
+    <div class="card">
+        <table  class="tab" >
         <tr>
-            <td><img src="Media\faculty.png" width="200" height="200"></td>
-            <td>Welcome to Faculty Page.Welcome to Faculty Page.Welcome to Faculty Page.<br>Welcome to Faculty Page.Welcome to Faculty Page.<br>Welcome to Faculty Page.</td>
+            <td><img src="Media\profile.jpeg" class="" width="200" height="170"></td>
+            <td>Welcome to Faculty Page.Generic description of faculty.<br>Professor has a well reputated name in sheninegans.</td>       
         </tr>
-         <tr>
+        <tr>
             <td>
-                <ul>
-                <li>My courses</li>
-                <li>Student List</li>
-                <li>Update Result</li>
+                <ul class="list-style">
+                    <li><a href="faculty_index.html">Manage users</a></li>
+                    <li><a href="View_Course.html">My courses</a></li>
+                    <li><a href="View_students.html">Student List</a></li>
+                    <li><a href="View_result.html">Update Result</a></li>
                 </ul>
             </td>
         </tr>
-    </table>
+        </table>
     <hr> 
     <table border="2">
         <tr>
             <td><b>Name</b></td>
-            <td>Professor</td>
-        </tr>
-        <tr>
             <td><b>Email</b></td>
-            <td>preofessor@gmail.com</td>
+            <td><b>Department</b></td>
         </tr>
         <tr>
-            <td><b>Department</b></td>
+            <td>Professor</td>
+            <td>preofessor@gmail.com</td>
             <td>Computer Science</td>
         </tr>
-    </table>    
-    </center>
+    </table>   
+    </div> 
     </body>
 </html>
 

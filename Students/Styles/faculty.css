@@ -1,0 +1,90 @@
+body
+{
+    margin: 0;
+    padding: 40px;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(to left,#B13BFF,#090040);
+}
+.profile-heading{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color:lavender;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgb(0,0,0.16) ;
+}
+table{
+    align-content: center;
+    border: 2px solid rgba(253, 85, 85, 0.333);
+    box-shadow: white;
+    align-items: center;
+    font-style: normal;
+    color: lavender;
+}
+a:link{
+    color: black;
+}
+a:hover{g
+    color: cyan;
+}
+.card{
+    background-color: #7e4997;
+    border-radius: 20px;
+    padding:20px;
+    margin: auto;
+    box-shadow: 0px 6px 20px rgb(0,0,0.5) ; 
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.card:hover{
+    border:2px solid #430A5D;
+    background: radial-gradient(#430A5D,#B13BFF);
+    transform: scale(1.5);
+    overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
+}
+
+.list-style{
+    list-style: none;
+    direction: flex;
+    gap: 20px;
+    padding: 0;
+    flex-direction: row;
+    display:flex;
+}
+
+.list-style li{
+    align-items: center;
+    align-content: center;
+    background: lavenderblush;
+    color: #381e49;
+    padding: 10px 10px 20px 40px;
+    box-shadow: 0px 12px 32px rgb(1,0,1.5);
+    border-radius: 16px;
+    position: relative;
+    transition: transform 0.3 ease,box-shadow 0.2 ease;
+}
+
+.list-style li:hover{
+    border:2px solid #51335f;
+    background: radial-gradient(#6e4d7f,#d4b7e8);
+    transform: scale(1.6);
+    box-shadow: 0px 12px 32px rgb(1,0,1.5);
+}
+
+.list-style li::before{
+   content:'→'; 
+   position:absolute;
+   top:50px;
+   transform:translate(-50%);
+   font-weight:bold;
+   left:12px;
+   height:20px;
+   width:20px;
+   color:black;
+   background-color: #d4b7e8;
+   display: flex;
+   align-content: center;
+   justify-content:center;
+}
