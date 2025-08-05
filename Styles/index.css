@@ -77,24 +77,6 @@ a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.card3 {
-    background-color: #551971;
-    border-radius: 16px;
-    padding: 25px;            
-    margin: auto;
-    max-width: 500px;          
-    box-shadow: 0px 4px 15px rgb(0, 0, 1.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card3:hover {
-    border: 2px solid #430A5D;
-    transform: scale(1.1);     /* Slightly less zoom on hover */
-    background: radial-gradient(#430A5D, #501f71);
-    box-shadow: 0px 12px 32px rgb(0, 0, 1.5);
-}
-
 .list-style {
     list-style: none;
     direction: flex;

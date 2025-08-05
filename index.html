@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Result Analysis Dashboard</title>
-    <link rel="stylesheet" href="Styles\faculty.css">
+    <link rel="stylesheet" href="Styles/index.css" />
 </head>
 <body>
     <h1 class="profile-heading">Result Analysis Homepage</h1>
-    <center>
-         <table border="1">
-            <tr>
-                <td><a href="Admin/admin_index.html"><img src="Admin\Media\protection.png" width="180" height="180" alt="Admin Image"></a></td>
-                <td><a href="Faculty\faculty_index.html"><img src="Faculty\Media\graduation.png" width="180" height="180" alt="Faculty Image"></a></td>
-                <td><a href="Students\student_index.html"><img src="Students\Media1\student.png" width="180" height="180" alt="Student Image"></a></td>
-            </tr>
-        </table>
-    </center>
+
+    <div class="dashboard-container">
+        <div class="card">
+            <a href="Admin/adminindex.html">
+                <img src="Admin/Media/protection.png" alt="Admin" />
+                <p>Admin</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Faculty/facultyindex.html">
+                <img src="Faculty/Media/graduation.png" alt="Faculty" />
+                <p>Faculty</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Students\studentindex.html">
+                <img src="Students/Media1/student.png" alt="Student" />
+                <p>Student</p>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

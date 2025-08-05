@@ -41,8 +41,16 @@ a:hover{
 .card:hover{
     border:2px solid #430A5D;
     background: radial-gradient(#430A5D,#B13BFF);
-    transform: scale(1.5);
     overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
+}
+
+.card2{
+    background-color: #430A5D;
+    border-radius: 20px;
+    padding:20px;
+    margin: auto;
+    box-shadow: 0px 6px 20px rgb(0,0,0.5) ; 
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
 
 .list-style{
