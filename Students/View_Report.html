@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Report</title>
+    <link rel="stylesheet" href="Styles\student.css">
 </head>
 <body>
-    
+
+    <h1 class="profile-heading">View Report</h1>
+
+    <form class="marks-form">
+        <div>
+            <label for="semester">Select Semester</label>
+            <select id="semester" name="semester">
+                <option value="">-- Select Semester --</option>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8">8th Semester</option>
+            </select>
+        </div>
+        <button type="submit">View Report</button>
+    </form>
+
+    <div class="report-summary">
+        <table>
+            <tr>
+                <th>CGPA</th>
+                <td>9.58</td>
+            </tr>
+            <tr>
+                <th>SGPA</th>
+                <td>9.25</td>
+            </tr>
+            <tr>
+                <th>Credits Earned</th>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Certifications</th>
+                <td>Python for Data Science (Coursera), AWS Cloud Practitioner</td>
+            </tr>
+            <tr>
+                <th>Internships</th>
+                <td>AI Research Intern at TechLabs (Jan–Mar 2025)</td>
+            </tr>
+            <tr>
+                <th>Remarks</th>
+                <td>Excellent academic performance with strong project work in AI.</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/index.html" class="gback">🏠BACK</a></center>
+
 </body>
 </html>

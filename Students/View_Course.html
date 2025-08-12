@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Course</title>
+    <link rel="stylesheet" href="Styles\student.css">
 </head>
 <body>
+
+    <h1 class="profile-heading">View Course</h1>
+
+    <form class="marks-form">
+        <div>
+            <label for="search">Search Course</label>
+            <input type="text" id="search" name="search" placeholder="Enter course name or code">
+        </div>
+        <div>
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester">
+                <option value="">Select Semester</option>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8">8th Semester</option>
+            </select>
+        </div>
+        <button type="submit">Search</button>
+    </form>
+
     
+    <table>
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Credits</th>
+                <th>Faculty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE301</td>
+                <td>Database Management Systems</td>
+                <td>4</td>
+                <td>Dr. Meera Sharma</td>
+            </tr>
+            <tr>
+                <td>CSE302</td>
+                <td>Operating Systems</td>
+                <td>4</td>
+                <td>Prof. Rakesh Verma</td>
+            </tr>
+            <tr>
+                <td>CSE303</td>
+                <td>Computer Networks</td>
+                <td>3</td>
+                <td>Dr. Anjali Gupta</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/index.html" class="gback">🏠BACK</a></center>
+
 </body>
 </html>

@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View_result</title>
+    <link rel="stylesheet" href="Styles\student.css">
 </head>
 <body>
-    
+    <h1 class="profile-heading">View Result</h1>
+
+    <form class="marks-form">
+        <div>
+            <label for="semester">Select Semester</label>
+            <select id="semester" name="semester">
+                <option value="">-- Select Semester --</option>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+                <option value="5">5th Semester</option>
+                <option value="6">6th Semester</option>
+                <option value="7">7th Semester</option>
+                <option value="8">8th Semester</option>
+            </select>
+        </div>
+        <button type="submit">View Result</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Marks Obtained</th>
+                <th>Maximum Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CSE301</td>
+                <td>Database Management Systems</td>
+                <td>82</td>
+                <td>100</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>CSE302</td>
+                <td>Operating Systems</td>
+                <td>75</td>
+                <td>100</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>CSE303</td>
+                <td>Computer Networks</td>
+                <td>88</td>
+                <td>100</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/index.html" class="gback">🏠BACK</a></center>
+
 </body>
 </html>

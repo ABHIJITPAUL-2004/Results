@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles/faculty.css">
 </head>
 <body>
+    <h1 class="profile-heading">Post Marks</h1>
     
+    <form class="marks-form">
+        <label for="subject">Student Name</label>
+        <input type="text" id="student" name="Sudent" placeholder="Enter student name">
+
+        <label for="regno">Registration Number</label>
+        <input type="number" id="regno" name="regno" placeholder="Enter Registration numeber">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
+
+        <label for="marks">Marks</label>
+        <input type="number" id="marks" name="marks" placeholder="Enter marks">
+
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" name="remarks" rows="3" placeholder="Enter remarks"></textarea>
+
+        <button type="submit">Submit Marks</button>
+    </form>
+
+    <div class="search-container" style="margin: 20px auto; max-width: 500px; display: flex; justify-content: center;">
+        <input type="text" class="search-input" placeholder="Search records..."
+            style="width: 100%; padding: 12px 20px; font-size: 16px; border-radius: 30px; border: 2px solid #7e57c2; outline: none; background-color: #fdfdff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>85</td>
+                <td>Good work</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Physics</td>
+                <td>78</td>
+                <td>Needs improvement</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>Chemistry</td>
+                <td>92</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>Biology</td>
+                <td>88</td>
+                <td>Well done</td>
+            </tr>
+            <tr>
+                <td>Ravi Kumar</td>
+                <td>English</td>
+                <td>72</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <td>Sneha Patil</td>
+                <td>Economics</td>
+                <td>81</td>
+                <td>Good improvement</td>
+            </tr>
+        </tbody>
+    </table>
+        <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/Faculty/facultyindex.html" class="gback">BACK</a></center>
 </body>
 </html>

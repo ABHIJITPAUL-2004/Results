@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles/faculty.css">
 </head>
 <body>
-    
+    <h1 class="profile-heading">View Students</h1>
+
+    <form class="marks-form">
+        <label for="section">Select Section</label>
+        <select id="section" name="section">
+            <option value="">-- Select Section --</option>
+            <option value="CSE-A">CSE-A</option>
+            <option value="CSE-B">CSE-B</option>
+            <option value="CSE-C">CSE-C</option>
+        </select>
+        <button type="submit">Show Students</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Roll No</th>
+                <th>Section</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>21CSE001</td>
+                <td>CSE-A</td>
+                <td>
+                    <input type="submit" value="View Results">
+                    <input type="submit" value="Profile">
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>21CSE002</td>
+                <td>CSE-A</td>
+                <td>
+                    <input type="submit" value="View Results">
+                    <input type="submit" value="Profile">
+                </td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>21CSE003</td>
+                <td>CSE-A</td>
+                <td>
+                    <input type="submit" value="View Results">
+                    <input type="submit" value="Profile">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/Faculty/facultyindex.html" class="gback">BACK</a></center>
 </body>
 </html>

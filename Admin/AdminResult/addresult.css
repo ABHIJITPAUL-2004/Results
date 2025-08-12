@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to left, #f1f4f8, #dce3ee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-heading {
+    text-align: center;
+    font-size: 42px;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.card2 {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Form Styling */
+.result-form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #36125c;
+}
+
+select, input[type="number"], input[type="text"] {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+    font-size: 14px;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: #6a4caf;
+    box-shadow: 0 0 5px rgba(106, 76, 175, 0.5);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #6a4caf;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #5a3b99;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #6a4caf;
+    color: #fff;
+}
+
+td select {
+    min-width: 120px;
+}
+
+
+.gback {
+    display: inline-block;
+    margin-top: 20px;
+    background: #6a4caf;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.gback:hover {
+    background: #5a3b99;
+}

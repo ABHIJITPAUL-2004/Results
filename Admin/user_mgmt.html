@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User management</title>
+    <link rel="stylesheet" href="Styles/admin.css">
 </head>
 <body>
-    <center><h1>User management</h1></center>
-    
+    <h1 class="profile-heading">User Management</h1>
+    <section>
+        <h2>My Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="adminName">Full Name</label>
+                <input type="text" id="adminName" name="adminName" placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+                <label for="adminEmail">Email</label>
+                <input type="email" id="adminEmail" name="adminEmail" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="adminUsername">Username</label>
+                <input type="text" id="adminUsername" name="adminUsername" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter new password">
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Update Profile">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Manage Other Users</h2>
+        <form>
+            <div class="form-group">
+                <label for="userId">User ID</label>
+                <input type="text" id="userId" name="userId" placeholder="Enter User ID">
+            </div>
+            <div class="form-group">
+                <label for="userName">Full Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role">
+                    <option value="">Select role</option>
+                    <option value="admin">Admin</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Add User">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>U101</td>
+                    <td>John Doe</td>
+                    <td>Admin</td>
+                    <td>john.doe@example.com</td>
+                    <td>johndoe</td>
+                    <td>
+                        <input type="submit" value="Edit">
+                        <input type="submit" value="Delete">
+                    </td>
+                </tr>
+                <tr>
+                    <td>U102</td>
+                    <td>Jane Smith</td>
+                    <td>Faculty</td>
+                    <td>jane.smith@example.com</td>
+                    <td>janesmith</td>
+                    <td>
+                        <input type="submit" value="Edit">
+                        <input type="submit" value="Delete">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <center><a href="adminindex.html" class="gback">Back</a></center>
 </body>
 </html>

@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles/faculty.css">
 </head>
 <body>
-    
+     <h1 class="profile-heading">View Result</h1>
+    <form class="marks-form">
+        <div>
+            <label for="search">Search by Roll No / Name</label>
+            <input type="text" id="search" name="search" placeholder="Enter roll number or name">
+        </div>
+        <div>
+            <label for="course">Course</label>
+            <select id="course" name="course">
+                <option value="">Select Course</option>
+                <option value="DSA">Data Structures & Algorithms</option>
+                <option value="OS">Operating Systems</option>
+                <option value="DBMS">Database Management Systems</option>
+                <option value="CN">Computer Networks</option>
+            </select>
+        </div>
+        <div>
+            <label for="year">Year</label>
+            <select id="year" name="year">
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+        </div>
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS2023001</td>
+                <td>Aryan Kumar</td>
+                <td>Data Structures</td>
+                <td>88</td>
+                <td>
+                    <input type="submit" value="View Details">
+                </td>
+            </tr>
+            <tr>
+                <td>CS2023002</td>
+                <td>Priya Sharma</td>
+                <td>Database Systems</td>
+                <td>92</td>
+                <td>
+                    <input type="submit" value="View Details">
+                </td>
+            </tr>
+            <tr>
+                <td>CS2023003</td>
+                <td>Rohan Das</td>
+                <td>Operating Systems</td>
+                <td>85</td>
+                <td>
+                    <input type="submit" value="View Details">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <br>
+    <br>
+    <center><a href="http://127.0.0.1:5500/results/Faculty/facultyindex.html" class="gback">BACK</a></center>
 </body>
 </html>

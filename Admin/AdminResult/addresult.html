@@ -3,93 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add result</title>
-    <link rel="stylesheet" href="faculty.css">
+    <title>Add Result</title>
+    <link rel="stylesheet" href="addresult.css">
 </head>
 <body>
     <h1 class="profile-heading">Admin Result Dashboard</h1>
     <div class="card2">
-        <center>'
-            <form action="result_mgmt.html" method="post">
-                <table border="1" cellpadding="10">
-                    <tr>
-                            <td><label for="academicYear">Academic Year:</label></td>
-                            <td>
-                                <select name="academicYear" id="academicYear" required>
-                                    <option value="">--Select Year--</option>
-                                    <option value="2021-2022">2021-2022</option>
-                                    <option value="2022-2023">2022-2023</option>
-                                    <option value="2023-2024">2023-2024</option>
-                                    <option value="2024-2025">2024-2025</option>
-                                    <option value="2025-2026">2025-2026</option>
-                                </select>
-                            </td>
-                            <td><label for="semester">Semester:</label></td>
-                            <td>
-                                <select name="semester" id="semester" required>
-                                    <option value="">--Select Semester--</option>
-                                    <option value="Odd">Odd</option>
-                                    <option value="Even">Even</option>
-                                </select>
-                            </td>
-                            <td colspan="2" style="text-align:center;">
-                                <input type="submit" value="Save">
-                                <input type="reset" value="Reset">
-                            </td>
-                    </tr>
-                </table>
-            </form>
-    <form action="D:\FrontEnd\results\Admin\result_mgmt.html" method="post">
-        <table border="1" cellpadding="10">
-            <th>
-                <tr>
-                    <th>Student No</th>
-                    <th>Name</th>
-                    <th>ID</th>
-                    <th>Course</th>
-                    <th>Marks</th>
-                    <th>Action</th>
-                </tr>
-            </th>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td>Abhijit Paul</td>
-                    <td>2400032519</td>
-                    <td>Data Science</td>
-                    <td><input type="number" name="marks1" min="0" max="100" required></td>
-                    <td>
-                        <select name="action1" required>
-                            <option value="">--Select--</option>
-                            <option value="Pass">Pass</option>
-                            <option value="Fail">Fail</option>
-                            <option value="Withheld">Withheld</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>Sneha Reddy</td>
-                    <td>2400032525</td>
-                    <td>Web Development</td>
-                    <td><input type="number" name="marks2" min="0" max="100" required></td>
-                    <td>
-                        <select name="action2" required>
-                            <option value="">--Select--</option>
-                            <option value="Pass">Pass</option>
-                            <option value="Fail">Fail</option>
-                            <option value="Withheld">Withheld</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <a href="http://127.0.0.1:5500/results/Admin/result_mgmt.html"><input type="submit" value="Submit All"></a>
-    </form>
-    </div>
-            
+        <form action="result_mgmt.html" method="post" class="result-form">
+            <div class="form-group">
+                <label for="academicYear">Academic Year:</label>
+                <select name="academicYear" id="academicYear" required>
+                    <option value="">--Select Year--</option>
+                    <option value="2021-2022">2021-2022</option>
+                    <option value="2022-2023">2022-2023</option>
+                    <option value="2023-2024">2023-2024</option>
+                    <option value="2024-2025">2024-2025</option>
+                    <option value="2025-2026">2025-2026</option>
+                </select>
+            </div>
 
-        </center> 
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <select name="semester" id="semester" required>
+                    <option value="">--Select Semester--</option>
+                    <option value="Odd">Odd</option>
+                    <option value="Even">Even</option>
+                </select>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Save">
+                <input type="reset" value="Reset">
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Student No</th>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Abhijit Paul</td>
+                        <td>2400032519</td>
+                        <td>Data Science</td>
+                        <td><input type="number" name="marks1" min="0" max="100" required></td>
+                        <td>
+                            <select name="action1" required>
+                                <option value="">--Select--</option>
+                                <option value="Pass">Pass</option>
+                                <option value="Fail">Fail</option>
+                                <option value="Withheld">Withheld</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Sneha Reddy</td>
+                        <td>2400032525</td>
+                        <td>Web Development</td>
+                        <td><input type="number" name="marks2" min="0" max="100" required></td>
+                        <td>
+                            <select name="action2" required>
+                                <option value="">--Select--</option>
+                                <option value="Pass">Pass</option>
+                                <option value="Fail">Fail</option>
+                                <option value="Withheld">Withheld</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="form-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <center><a href="http://127.0.0.1:5500/results/Admin/result_mgmt.html" class="gback">Back</a></center>
 </body>
 </html>
